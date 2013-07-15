@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>1000</version>
+  <dependencies>
+    <dependency>profile-collective.responsivetheme:default</dependency>
+    <dependency>profile-Products.EasyAsPiIE:default</dependency>
+    <dependency>profile-Products.ContentWellPortlets:default</dependency>
+  </dependencies>
+</metadata>

@@ -1,0 +1,2 @@
+recursive-include ploneedu *
+global-exclude *pyc

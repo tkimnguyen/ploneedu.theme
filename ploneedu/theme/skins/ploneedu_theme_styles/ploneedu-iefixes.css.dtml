@@ -1,0 +1,71 @@
+ /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+
+/* all the classes and ids that need easyaspiie */
+#portal-header,
+#portal-columns,
+#portal-top {
+     behavior: url(&dtml-portal_url;/PIE.htc); 
+     position: relative; 
+     }
+
+div#visual-portal-wrapper { border-top: 0px !important;}
+
+#portal-personaltools {
+    background-color: transparent !important;
+}
+
+@media screen and (min-width: 618px) {
+    #portal-top { 
+        border-radius: 15px 15px 0px 0px !important; 
+        border-top: 6px solid white;
+    }
+    
+    #portal-columns {
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    #portal-header {
+        border-radius: 15px 15px 0px 0px !important;
+        /*  border-top: 2px solid #98B5D9 !important; this is acting weird. */
+        background: #4b4849 url( &dtml-portal_url;/chalkboard.jpg ) repeat-y top left fixed;
+    }
+    
+    #portal-searchbox {
+        margin-bottom: 49px;
+    }
+
+    #portal-personaltools-wrapper {
+        *margin-top: -30px !important;
+    }
+       
+    #portal-globalnav {
+        *margin-bottom: 0px !important;
+        *margin-top: 50px !important;
+       background:transparent !important;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#10ffffff,endColorstr=#10ffffff) !important;
+       zoom: 1;
+   }
+   
+   
+}
+
+@media screen and (max-width: 617px) {
+    div.expanded button.navigation-button, button.navigation-button {
+  float: right !important;
+        border: 2px solid red;
+        width: 18% !important;
+        float: right;
+   }
+   ul#portal-globalnav { background: transparent !important; }
+    
+    #portal-column-content, #portal-column-one, #portal-column-two { 
+        *width: 100% !important;
+        }
+        
+    #portal-searchbox {
+        *margin-bottom: 0px !important;
+        *padding-bottom: 0px !important;
+        border: none !important;
+    }
+  

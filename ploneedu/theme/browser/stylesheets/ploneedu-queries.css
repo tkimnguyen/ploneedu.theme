@@ -1,0 +1,351 @@
+/* ** 1. For all browsers and sizes ** */
+/* ** 2. 618px and above ** */
+/* ** 3. 617px and below ** */
+
+/* ** 1. For all browsers and sizes ** */
+#portal-header .searchButton {
+    border: none !important;
+    height: 32px;
+    width: 32px;
+    font-size: 1.4em;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+    background:transparent url('../magnifier.png') no-repeat left top;
+    letter-spacing:100px;/*moves text out of way for ie*/
+    text-indent: -9999px;
+    }
+
+input.searchField {
+    -moz-appearance: none;
+    height: 2.5em;
+    }
+
+#portal-personaltools { 
+    background-color: transparent;
+    }
+    
+#portal-personaltools a {
+    color: white;
+    }
+
+#portal-personaltools dd {
+    background-color: #555454;
+    font-weight: bold;
+}
+
+/* portlet header colors */
+#portal-column-one dl.portlet dt, #portal-column-two dl.portlet dt, div#portal-column-content div#portlets-above dl.portlet dt {
+   padding-top: 0.6em;
+   padding-bottom: 0.6em;
+   font-size: 1.1em;
+}
+
+/* left column portlets */
+#portal-column-one div.portletWrapper:nth-child(1) dl.portlet dt.portletHeader {
+    background-color: #7ac14d;
+}
+
+#portal-column-one div.portletWrapper:nth-child(2) dl.portlet dt.portletHeader {
+    background-color: #3a73b8;
+    color: white;
+}
+
+#portal-column-one div.portletWrapper:nth-child(3) dl.portlet dt.portletHeader {
+    background-color: #d73e27;
+    color: white;
+}
+
+/* content area portlets */
+div#portal-column-content.cell div#viewlet-above-content div#portlets-above div.portletWrapper:nth-child(1) dl.portlet dt.portletHeader {
+    background-color: #be6467;
+    color: white;
+}
+
+div#portal-column-content.cell div#viewlet-above-content div#portlets-above div.portletWrapper:nth-child(1) dl.portlet dd {
+    padding: 0px;
+}
+
+/* right column portlets */
+#portal-column-two div.portletWrapper:nth-child(1) dl.portlet dt.portletHeader {
+    background-color: #ffd14f;
+}
+
+#portal-column-two div.portletWrapper:nth-child(2) dl.portlet dt.portletHeader {
+    background-color: #767676;
+    color: white;
+}
+
+#portal-columns {
+    background-color: white;
+}
+
+
+#search-label { 
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-right: 0.4em;
+    }
+
+
+#portlets-footer dl.portlet dt, #portlets-footer div.portletAssignments  div.portletHeader {
+    background: transparent;
+    color: white;
+}
+
+#portlets-footer .portletItem a, #portlets-footer .portletItem {
+    border: none;
+    color: white;
+}
+
+/* ** 1. START 618px and above ** */
+@media screen and (min-width: 618px) {
+    body { 
+        background-color: #434343 !important;
+        font-size: 1em !important; 
+        }
+    #plonelinks { 
+        text-align: right; 
+        color: white;
+        width: 90%;
+        margin: 0.5em auto;
+        }
+        
+    #plonelinks a {
+        color: white;
+        }
+    
+    #plonelinks img {
+        margin-right: 0.5em;
+        }
+    
+    div#visual-portal-wrapper { 
+        overflow: hidden;
+        background-color: #434343;
+        -webkit-border-top-left-radius: 15px;
+        -webkit-border-top-right-radius: 15px;
+        -moz-border-radius-topleft: 15px;
+        -moz-border-radius-topright: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top: 6px solid white;
+        width: 90% !important;
+        margin: 0 auto !important;
+        }    
+        
+    #portal-top {
+        background-color: white;
+        }
+    
+    #portal-header {
+        background-color: #4b4849;
+        max-width: 100%;
+        min-height: 100%;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        }
+    #portal-logo {
+        margin: 0.5em 0px;
+        }
+
+    a#portal-logo img {
+        max-width: 100% !important;
+        }
+        
+    #portal-personaltools-wrapper {
+        margin-top: -45px;
+        z-index: 100;
+        position: relative;
+        }
+    #portal-searchbox { 
+        margin-right: 15px; 
+        margin-top: 1em;
+        }
+        
+    #portal-columns {
+        -webkit-border-bottom-right-radius: 15px;
+        -webkit-border-bottom-left-radius: 15px;
+        -moz-border-radius-bottomright: 15px;
+        -moz-border-radius-bottomleft: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        font-size: 1em;
+        }
+        
+    #portal-breadcrumbs {
+        clear: both;
+        float: right;
+        color: #f3f3f3;
+        margin-right: 30px;
+        margin-top: -3em;
+    } 
+    
+    #portal-breadcrumbs a {
+        color: white;
+    }
+
+    .breadcrumbSeparator {
+        font-size: 1.3em;
+    }        
+    #portal-globalnav { 
+        padding-left: 1em;
+        padding-right: 30px;
+        }
+        
+    #portal-globalnav li a {
+        border-right: none;
+        margin: 0 0.5em;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background: transparent;
+        padding: 0.5em 1em 0.5em;
+        }
+    
+    #portal-globalnav .selected a, #portal-globalnav a:hover, #portal-globalnav .selected a:hover {
+        background: transparent;
+        border-bottom: 5px solid white;
+        color: white;
+        }
+    
+    #portal-globalnav { 
+        background: rgba(255,255,255,0.1);
+        z-index: 1;
+        position: relative;
+        } 
+    
+    #portal-header {
+        background:#4b4849 url('../chalkboard.jpg') repeat-y top left fixed; 
+        -webkit-border-top-left-radius: 15px;
+        -webkit-border-top-right-radius: 15px;
+        -moz-border-radius-topleft: 15px;
+        -moz-border-radius-topright: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top: 2px solid #98B5D9; 
+        }
+    
+
+} /* ** End 618px and above ** */
+
+
+/* ** START 617px and below ** */
+@media screen and (max-width: 617px) {
+    div#visual-portal-wrapper { 
+        background-color: white;
+        overflow: hidden;
+    }
+     #portal-columns {
+        font-size: 1em;
+        }
+    #portal-header {
+        background-color: #4b4849;
+        }
+    
+    a#portal-logo img {
+        max-width: 162px !important; 
+        margin-left: 0.5em;
+        }
+    div#logo {
+        top: 0.25em !important;
+    }
+    
+ #portal-personaltools-wrapper {
+        z-index: 100;
+        position: absolute;
+        top: 0.4em !important;
+        margin-left: -8% !important;
+        }
+    #portal-breadcrumbs { 
+        display: none;
+        }
+    div.row #portal-searchbox { 
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+        margin-right: 0px !important;
+        width: 82%;
+        }    
+    #portal-searchbox label#search-label, dd.portletItem.hide-portlet-content {
+        text-indent: -9999px;
+        display: block;
+        height: 0px;
+        padding: 0px !important;
+        }
+    #searchGadget { 
+        margin-left: 0.437em;
+        width: 75%;
+        }
+    
+    #portal-globalnav li a {
+        background-color: #f47836;
+        color: white;
+        padding: 8px 13px 8px 20px;
+        border-right: 0px;
+    }
+    #portal-globalnav li {
+        border-bottom: 1px solid #646567;
+        border-top: 1px solid #646567;
+        }
+    .nav-menu .nav-primary.expanded #portal-globalnav li {
+        margin: 0 !important;
+        width: 100%;
+        }
+    .nav-menu .nav-primary {
+        overflow: inherit;
+    }
+    
+    .nav-menu .nav-primary #portal-globalnav li:last-child, .nav-menu .nav-primary #portal-globalnav li:last-child a {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        }
+    div.expanded button.navigation-button, button.navigation-button {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background-color: transparent;
+        border: 0px; /* undo border set from responsive theme */
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        float: right;
+        width: 18%;
+        margin: 0px;
+        margin-top: -43px;
+        font-size: 0.6em;
+        }
+        .LSBox {
+            padding: 0 0 0.8em 0.56em;
+            }
+        .nav-menu .nav-primary span.nav-section {
+            display: none;
+        }
+    #portlets-footer [class*="FooterPortletManager"] {
+       clear: both;
+       margin-left: -100% !important;
+       width: 100%  !important;
+    }
+    #portal-column-two, #portal-column-one {
+        margin-left: -100% !important;
+        width: 100% !important;
+        }
+    #portlets-footer dl.portlet dt, #portlets-footer div.portletAssignments div.portletHeader {
+        background-color: #767676;
+        }
+    #portal-top, #portal-header { 
+        border-radius: 0px 0px 0px 0px !important;
+        border: none !important;
+        }
+    
+    #portlets-footer .portletItem a {
+        color: #205C90;
+    }
+    
+    #portlets-footer .portletItem {
+    color: black;
+    }
+    
+} /* ** End 617px and below ** */
